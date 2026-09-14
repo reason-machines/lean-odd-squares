@@ -1,0 +1,6 @@
+sample,n,last_odd,tile_count
+one,1,1,1
+small,3,5,9
+medium,5,9,25
+large,8,15,64
+poster,12,23,144
