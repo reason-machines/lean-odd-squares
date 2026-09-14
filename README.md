@@ -22,7 +22,7 @@ The toolchain is pinned to Lean 4.19.0. Successful compilation prints `oddSum_eq
 python3 -m http.server 4173 --bind 0.0.0.0 --directory site
 ```
 
-Open http://localhost:4173. Play/pause, replay, or select zero or any CSV sample. Reduced-motion users start with a static square; playback remains opt-in. The page uses native SVG/CSS/JavaScript; Inter loads from Google Fonts with a system-font fallback.
+Open http://localhost:4173. The explanation starts paused at zero. **Next step** adds exactly one animated L-shaped border and pauses playback; it disables at the selected target. Play/pause provides automatic playback. Replay and choosing a target reset to zero without starting playback. Select zero or any CSV sample. Reduced-motion users get the same manual controls without cell animations; playback remains opt-in. The page uses native SVG/CSS/JavaScript; Inter loads from Google Fonts with a system-font fallback.
 
 ## Data provenance
 
@@ -30,4 +30,4 @@ Open http://localhost:4173. Play/pause, replay, or select zero or any CSV sample
 
 ## Verification in this session
 
-Lean 4.19.0 compiled the theorem successfully. All five samples and zero were checked in the cloud browser. Replay reset to zero, animation advanced to eight, and Pause stopped it. The complete layout was visually inspected at 986 × 596. Reduced-motion handling is implemented but was not separately browser-tested.
+Lean 4.19.0 compiled the theorem successfully and reported only `[propext]`. The freshly read Mac CSV passed the 96-byte checksum and all five sample checks. Cloud browser checks covered manual steps 0 → 1 → 2 → 3, automatic playback through 5, replay back to zero, and stopping at target 1 with Next step disabled. Reduced-motion handling is implemented but was not separately browser-tested.
