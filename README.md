@@ -31,3 +31,5 @@ Open http://localhost:4173. The explanation starts paused at zero. **Next step**
 ## Verification in this session
 
 Lean 4.19.0 compiled the theorem successfully and reported only `[propext]`. The freshly read Mac CSV passed the 96-byte checksum and all five sample checks. Cloud browser checks covered manual steps 0 → 1 → 2 → 3, automatic playback through 5, replay back to zero, and stopping at target 1 with Next step disabled. Reduced-motion handling is implemented but was not separately browser-tested.
+
+QA touch
